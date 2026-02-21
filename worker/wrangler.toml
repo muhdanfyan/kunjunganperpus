@@ -5,4 +5,4 @@ compatibility_date = "2025-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "perpustakaan-db"
-database_id = "your-database-id"
+database_id = "935a8464-f3df-46f6-b374-68aeb76b4083"
