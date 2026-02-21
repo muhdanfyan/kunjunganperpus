@@ -3,7 +3,7 @@ import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8787';
+const API_URL = 'https://keperpus.muhdanfyan.workers.dev';
 
 const parseKTP = (text) => {
   const lines = text.split('\n');
