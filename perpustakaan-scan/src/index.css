@@ -1,0 +1,167 @@
+:root {
+  font-family: "Plus Jakarta Sans", "Poppins", "Segoe UI", sans-serif;
+  color: #0f172a;
+  background-color: #f6f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  padding: 28px;
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.banner {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.banner.info {
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  color: #0e7490;
+}
+
+.banner.success {
+  background: #ecfdf5;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+.section {
+  display: grid;
+  gap: 16px;
+}
+
+.separator {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #cbd5f5;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.textarea {
+  min-height: 72px;
+  resize: vertical;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.button.success {
+  background: #16a34a;
+  color: white;
+}
+
+.button.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.preview {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #cbd5f5;
+}
+
+.footer-note {
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+@keyframes scanning {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  50% { top: 100%; opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #00D1B2;
+  box-shadow: 0 0 10px #00D1B2;
+  animation: scanning 2s linear infinite;
+  z-index: 5;
+}
+
+.button.danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.button.success {
+  background-color: #22c55e;
+  color: white;
+}
+
+.button.secondary {
+  background-color: #94a3b8;
+  color: white;
+}
